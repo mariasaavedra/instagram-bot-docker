@@ -56,7 +56,7 @@ const setup = (async () => {
 });
 
 const login = (async () => {
-  await page.goto(hostname + "/accouonts/login", { waitUntil: "networkidle2" });
+  await page.goto(hostname + "/accounts/login", { waitUntil: "networkidle2" });
   await wait(3000);
   await page.type("input[name='username']", config.username, { delay: 30 })
   await page.type("input[name='password']", config.password, { delay: 30 })
